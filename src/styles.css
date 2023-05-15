@@ -70,9 +70,6 @@ h2 {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-h3 {
-  font-size: 20px !important;
-}
 h4 {
   padding-top: 30px;
   font-size: 22px !important;
@@ -175,7 +172,7 @@ a:hover {
   background-color: var(--secondary-color);
 }
 .index-text-front {
-  font-size: 34px;
+  font-size: 30px !important;
   text-align: center;
   padding-top: 10px;
   color: rgb(63, 59, 59);
