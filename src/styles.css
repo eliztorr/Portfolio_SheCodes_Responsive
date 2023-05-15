@@ -67,7 +67,8 @@ h1 {
 h2 {
   color: var(--primary-color);
   font-size: 34px !important;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 h3 {
   font-size: 20px !important;
@@ -182,6 +183,9 @@ a:hover {
 .index-text-back {
   font-size: 24px !important;
   padding: 50px;
+}
+.index-title {
+  margin-bottom: 40px;
 }
 
 .timeline {
