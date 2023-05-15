@@ -46,6 +46,24 @@ h6,
   text-align: center;
   margin-top: 20px;
 }
+@media only screen and (max-width: 580px) {
+  h1 {
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+  }
+  h2 {
+    font-size: 26px !important;
+    padding: 5px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+    line-height: 2 !important;
+    padding: 5px !important;
+  }
+  .about-me {
+    margin-bottom: 0px !important;
+  }
+}
 nav {
   padding: 10px 0;
 }
@@ -87,24 +105,6 @@ h4 {
 }
 img {
   width: 100%;
-}
-@media only screen and (max-width: 580px) {
-  h1 {
-    font-size: 30px !important;
-    margin-bottom: 10px !important;
-  }
-  h2 {
-    font-size: 26px !important;
-    padding: 5px !important;
-  }
-  h4 {
-    font-size: 18px !important;
-    line-height: 2 !important;
-    padding: 5px !important;
-  }
-  .about-me {
-    margin-bottom: 0px !important;
-  }
 }
 .about-me-photo {
   width: 70%;
