@@ -15,7 +15,7 @@ html * {
 body {
   line-height: 2;
   margin: 50px auto;
-  padding-top: 40px;
+  padding-top: 10px;
   height: 100%;
 }
 
@@ -45,23 +45,33 @@ h6,
   text-align: center;
   margin-top: 20px;
 }
-.navbar {
-  text-align: right;
-  background-color: rgb(19, 18, 19);
-  font-family: "Poppins", sans-serif;
+nav {
+  padding: 10px 0;
 }
-.navbar-brand {
-  margin-left: 20px;
-  font-size: 22px;
+nav ul {
+  padding: 0;
+  margin: 0;
 }
-.navbar-collapse {
-  font-size: 20px;
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
 }
 h1 {
   font-family: "Poppins", sans-serif;
   color: var(--third-color);
   font-size: 44px !important;
-  margin-top: 60px !important;
+  margin-top: 20px !important;
   margin-bottom: 40px !important;
 }
 h2 {
