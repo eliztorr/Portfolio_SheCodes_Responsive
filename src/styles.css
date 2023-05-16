@@ -1,33 +1,28 @@
 :root {
-  --primary-color: #14103b;
+  --primary-color: #cbc9df;
   --secondary-color: turquoise;
   --third-color: #f76b8a;
+  --fourth-color: #1d1a1a;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 html * {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
   color: var(--primary-color);
 }
 
 body {
   line-height: 2;
-  margin: 50px auto;
-  padding-top: 10px;
-  height: 100%;
-}
-
-#page-content {
-  flex: 1 0 auto;
+  padding-top: 5px;
 }
 #page-container {
   position: relative;
   min-height: 80vh;
 }
 #content-wrap {
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
   margin-bottom: 0px;
 }
 
@@ -44,9 +39,9 @@ h6,
 .h5,
 .h6 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 576px) {
   h1 {
     font-size: 30px !important;
     margin-bottom: 10px !important;
@@ -63,9 +58,15 @@ h6,
   .about-me {
     margin-bottom: 0px !important;
   }
+  .hero {
+    height: 100vh;
+  }
+  .hero h1 {
+    font-size: 25px !important;
+  }
 }
 nav {
-  padding: 10px 0;
+  padding: 2px 0;
 }
 nav ul {
   padding: 0;
@@ -86,6 +87,43 @@ nav a:hover,
 nav li.active a {
   color: var(--secondary-color);
 }
+
+.hero-container {
+  padding: 0px !important;
+}
+
+.hero {
+  min-height: 60rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url("../images/Sakura-blue.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 55px !important;
+  margin: 0;
+  padding: 0;
+  color: #02161b;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.hero h3 {
+  font-size: 38px;
+  margin: 0px;
+  padding: 0;
+  color: rgb(63, 59, 59);
+}
 h1 {
   font-family: "Poppins", sans-serif;
   color: var(--third-color);
@@ -94,7 +132,7 @@ h1 {
   margin-bottom: 40px !important;
 }
 h2 {
-  color: var(--primary-color);
+  color: var(--fourth-color);
   font-size: 34px !important;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -195,7 +233,6 @@ a:hover {
 .index-title {
   margin-bottom: 40px;
 }
-
 .timeline {
   border-left: 2px solid #e6e9ed;
   padding: 1rem 0;
@@ -275,7 +312,7 @@ a:hover {
 }
 .footer-1 .nav-links li a {
   padding: 10px;
-  color: var(--primary-color);
+  color: var(--fourth-color);
 }
 .footer-1 .nav-links li a:hover {
   color: var(--secondary-color);
