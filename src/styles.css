@@ -10,7 +10,6 @@ html * {
   font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
-  color: var(--primary-color);
 }
 
 body {
@@ -55,9 +54,6 @@ h6,
     line-height: 2 !important;
     padding: 5px !important;
   }
-  .about-me {
-    margin-bottom: 0px !important;
-  }
   .hero {
     height: 100vh;
   }
@@ -98,12 +94,7 @@ nav li.active a {
   display: table;
   width: 100%;
   height: auto;
-  background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    ),
-    url("../images/Sakura-blue.jpg");
+  background: url("../images/Sakura-blue.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +117,7 @@ nav li.active a {
 }
 h1 {
   font-family: "Poppins", sans-serif;
-  color: var(--third-color);
+  color: black;
   font-size: 44px !important;
   margin-top: 10px !important;
   margin-bottom: 40px !important;
@@ -144,12 +135,54 @@ h4 {
 img {
   width: 100%;
 }
-.about-me-photo {
-  width: 70%;
-  border-radius: 15px;
+.content-section {
+  min-height: 70rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background: url("../images/sakura-pink.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.about-me {
+
+#about {
+  color: black;
+  font-size: 22px;
+}
+
+#about a {
+  color: black;
+}
+#about a:hover {
+  color: var(--third-color);
+}
+
+.content-section-heading h2,
+.content-section-heading .h2 {
+  font-size: 3rem;
+  color: black;
+}
+.content-section-heading h3,
+.content-section-heading .h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 50px;
+}
+.content-section-heading h4,
+.content-section-heading .h4 {
+  color: black;
+}
+
+.about-section {
+  min-height: 50rem;
+  padding-top: 2rem;
+  padding-bottom: 7.5rem;
   margin-bottom: 20px;
+  background: url("../images/sakura-white.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .index-text-front {
   font-size: 24px !important;
@@ -172,66 +205,6 @@ a {
 a,
 a:hover {
   text-decoration: none !important;
-}
-.card-flip > div {
-  backface-visibility: hidden;
-  transition: transform 300ms;
-  transition-timing-function: linear;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-}
-.card-front {
-  transform: rotateY(0deg);
-  background-color: var(--secondary-color);
-  border-radius: 20px;
-}
-.card-back {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
-  height: auto;
-  border: transparent;
-  background-color: var(--third-color);
-  border-radius: 20px;
-  color: white;
-}
-.card-flip:hover .card-front {
-  transform: rotateY(-180deg);
-}
-.card-flip:hover .card-back {
-  transform: rotateY(0deg);
-}
-.contact-card p {
-  font-size: 24px;
-  text-align: center;
-}
-.contact-link a {
-  text-decoration: none !important;
-  color: white;
-}
-.contact-link a:hover {
-  color: black;
-}
-.index-card-front {
-  background-color: pink;
-}
-.index-card-back {
-  background-color: var(--secondary-color);
-}
-.index-text-front {
-  font-size: 30px !important;
-  text-align: center;
-  padding-top: 10px;
-  color: rgb(63, 59, 59);
-}
-.index-text-back {
-  font-size: 24px !important;
-  padding: 50px;
-}
-.index-title {
-  margin-bottom: 40px;
 }
 .timeline {
   border-left: 2px solid #e6e9ed;
@@ -392,4 +365,26 @@ a:hover {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+}
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+}
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: #fff;
+}
+.scroll-to-top:hover {
+  background: #343a40;
+}
+.scroll-to-top i {
+  font-weight: 800;
 }
