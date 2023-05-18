@@ -139,19 +139,19 @@ img {
   min-height: 70rem;
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
-  background: url("../images/sakura-pink.jpg");
+  background: url("../images/sakura-black.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #about {
-  color: black;
+  color: white;
   font-size: 22px;
 }
 
 #about a {
-  color: black;
+  color: white;
 }
 #about a:hover {
   color: var(--third-color);
@@ -160,18 +160,18 @@ img {
 .content-section-heading h2,
 .content-section-heading .h2 {
   font-size: 3rem;
-  color: black;
+  color: white;
 }
 .content-section-heading h3,
 .content-section-heading .h3 {
   font-size: 1rem;
   text-transform: uppercase;
-  color: black;
+  color: white;
   padding-top: 50px;
 }
 .content-section-heading h4,
 .content-section-heading .h4 {
-  color: black;
+  color: white;
 }
 
 .about-section {
@@ -294,7 +294,7 @@ a:hover {
   padding: 0px;
 }
 .p-links a {
-  color: var(--primary-color);
+  color: var(--fourth-color);
   text-decoration: none !important;
 }
 .p-links a:hover {
