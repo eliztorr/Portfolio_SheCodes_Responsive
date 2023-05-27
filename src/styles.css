@@ -50,7 +50,7 @@ h6,
     padding: 5px !important;
   }
   h4 {
-    font-size: 18px !important;
+    font-size: 16px !important;
     line-height: 2 !important;
     padding: 5px !important;
   }
@@ -132,9 +132,6 @@ h4 {
   padding-top: 30px;
   font-size: 22px !important;
 }
-img {
-  width: 100%;
-}
 .content-section {
   min-height: 70rem;
   padding-top: 7.5rem;
@@ -179,10 +176,14 @@ img {
   padding-top: 2rem;
   padding-bottom: 7.5rem;
   margin-bottom: 20px;
-  background: url("../images/sakura-white.jpg");
+  background: url("../images/sakura-sky-blue.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: rgb(72, 72, 73);
+}
+.about-section h4 {
+  font-size: 22px !important;
 }
 .index-text-front {
   font-size: 24px !important;
@@ -190,12 +191,10 @@ img {
   padding-top: 10px;
   color: rgb(63, 59, 59);
 }
-.about-info {
-  padding: 20px;
-}
-.about-text {
-  padding: 30px;
-  margin-bottom: 30px;
+
+.about-image {
+  border-radius: 50%;
+  width: 70%;
 }
 a {
   -webkit-transition: 0.3s all ease;
